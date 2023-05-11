@@ -1,3 +1,4 @@
+import 'package:bottom_navigation_example/navigation/routes.dart';
 import 'package:flutter/material.dart';
 
 class ChatPage extends StatelessWidget {
@@ -30,5 +31,6 @@ class ChatPage extends StatelessWidget {
 
   _openAlbum(BuildContext context) {
     // TODO: open MusicAlbumPage
+    Navigator.of(context, rootNavigator: true).pushNamed(Routes.musicAlbum);
   }
 }

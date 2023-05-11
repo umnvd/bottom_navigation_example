@@ -21,6 +21,11 @@ class ProfilePage extends StatelessWidget {
                 onPressed: () => _openSettings(context),
                 child: const Text('Settings'),
               ),
+              const SizedBox(height: 16),
+              FilledButton(
+                onPressed: () => _openSettingsNested(context),
+                child: const Text('Settings (nested)'),
+              ),
             ],
           ),
         ),
@@ -30,5 +35,9 @@ class ProfilePage extends StatelessWidget {
 
   void _openSettings(BuildContext context) {
     Navigator.of(context, rootNavigator: true).pushNamed(Routes.settings);
+  }
+
+  _openSettingsNested(BuildContext context) {
+    Navigator.of(context).pushNamed(Routes.settings);
   }
 }

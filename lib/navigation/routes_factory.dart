@@ -4,6 +4,8 @@ import 'package:bottom_navigation_example/pages/chats/chat_page.dart';
 import 'package:bottom_navigation_example/pages/chats/chats_page.dart';
 import 'package:bottom_navigation_example/pages/music/music_album_page.dart';
 import 'package:bottom_navigation_example/pages/music/music_page.dart';
+import 'package:bottom_navigation_example/pages/music/search/music_search_resultss_page.dart';
+import 'package:bottom_navigation_example/pages/music/search/music_search_tags_page.dart';
 import 'package:bottom_navigation_example/pages/profile/profile_page.dart';
 import 'package:bottom_navigation_example/pages/settings_page.dart';
 import 'package:bottom_navigation_example/pages/start_page.dart';
@@ -18,6 +20,9 @@ class RoutesFactory {
         Routes.home: (context, args) => const HomeLayout(),
         Routes.music: (context, args) => const MusicPage(),
         Routes.musicAlbum: (context, args) => const MusicAlbumPage(),
+        Routes.musicSearchTags: (context, args) => const MusicSearchTagsPage(),
+        Routes.musicSearchResults: (context, args) =>
+            const MusicSearchResultsPage(),
         Routes.chats: (context, args) => const ChatsPage(),
         Routes.chatsChat: (context, args) => const ChatPage(),
         Routes.profile: (context, args) => const ProfilePage(),
